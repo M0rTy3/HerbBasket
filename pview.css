@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500&display=swap%27%29%3B');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    outline: 2cm;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+  }
+
+  .small-img-col{
+    flex-basis: 50%;
+    cursor: pointer;
+  }
+
+  .pview select{
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .pview input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .pview input:focus{
+    outline: none;
+  }
+  .btn{
+    border: 1px solid #637E76;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  .btn1{
+    color: black;
+  }
+  .btn1:hover{
+    color: #637E76;
+  }
+  .btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  .btn1:hover::before{
+    height: 180%;
+  }
+  :root{
+    --yellow: #FFBD13;
+    --blue: #4383FF;
+    --blue-d-1: #3278FF;
+    --light: #F5F5F5;
+    --grey: #AAA;
+    --white: #FFF;
+    --shadow: 1px 1px 5px rgba(0,0,0.05);
+}
+
+  .wrapper{
+    background: var(--white);
+    padding: 2rem;
+    max-width: 576px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+  .wrapper h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+  }
+  .rating .star{
+    cursor: pointer;
+  }
+  .rating .star:hover{
+    transform: scale(1.1);
+  }
+  textarea{
+    width: 100%;
+    background: var(--light);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+  }
+  .btn-group{
+    display: flex;
+    grid-gap: .5rem;
+    align-items: center;
+  }
+  .btn-group .btn{
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    align-items: center;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 500;
+  }
+  .btn-group .btn.submit{
+    background: var(--blue);
+    color: var(--white);
+  }
+  .btn-group .btn.submit:hover{
+    background: var(--blue-d-1);
+  }
+  .btn-group .btn.cancel{
+    background: var(--white);
+    color: var(--blue);
+  }
+  .btn-group .btn.canel:hover{
+    background: var(--light);
+  }
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.top-navbar p{
+    margin-top: 13px;
+    margin-left: 15px;
+}
+.top-navbar .icons{
+    margin-top: 13px;
+    margin-right: 15px;
+}
+.top-navbar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+.top-navbar a img{
+    margin-bottom: 3px;
+}
+.top-navbar a:hover{
+    color: rgb(169, 179, 136);
+}
+
+@media screen and (max-width:400px){
+    .top-navbar a{
+        font-size: 13px;
+    }
+    .top-navbar a img{
+        width: 15px;
+    }
+    .top-navbar p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:320px){
+    .top-navbar a{
+        font-size: 10px;
+    }
+    .top-navbar a img{
+        width: 13px;
+    }
+    .top-navbar p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:318px){
+    .top-navbar a{
+        font-size: 8px;
+        margin-left: 0;
+    }
+    .top-navbar a img{
+        width: 10px;
+        margin-left: 0;
+    }
+    .top-navbar p{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+/* top navbar */
+/* navbar */
+#navbar{
+    background-color: rgb(169, 179, 136);
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item{
+    margin-left: 20px;
+}
+
+#search input{
+    margin-left: 30px;
+    width: 550px;
+    border-radius: 50px;
+    border: none;
+}
+#search a{
+    margin-left: 200px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid #B99470;
+    background-color: #B99470;
+}
+#search button{
+    margin-left: 10px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid #B99470;
+    background-color: #B99470;
+}
+#cart a{
+    margin-left: 55px;
+    border-radius: 40px;
+}
+
+/* footer */
+#footer{
+    padding: 0 0 30px 0px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(169, 179, 136);
+    margin-top: 100px;
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    background-color: rgb(169, 179, 136);
+    color: white;
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: black;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+    color: black;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #B99470;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+}
+#footer .footer-top .socail-links a:hover{
+    background-color: #B99470;
+    color: white;
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+}
+#footer .credits a{
+    color: black;
+}
